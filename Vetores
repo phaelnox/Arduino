@@ -1,0 +1,14 @@
+int soma;
+
+int abacaxi[5]={2, 3, 4, 5, 6};
+
+void setup()
+{
+  Serial.begin(9600);
+  soma=abacaxi[0]+abacaxi[1];
+  Serial.println(soma);
+}
+
+void loop()
+{ 
+}
