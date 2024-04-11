@@ -1,0 +1,12 @@
+int num = 10;
+  
+  void setup()
+{
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  Serial.println(num);
+  delay(2000);
+}
