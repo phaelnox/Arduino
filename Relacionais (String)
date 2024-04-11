@@ -1,0 +1,31 @@
+int a, b, c;
+
+void setup()
+{
+  Serial.begin(9600);
+  a = 3;
+  b = 2;
+  
+  c=a>b;
+  Serial.println("a>b? " + String(c));
+
+  c=a>=b;
+  Serial.println("a>=b? " + String(c));
+  
+  c=a<b;
+  Serial.println("a<b? " + String(c));
+
+  c=a<=b;
+  Serial.println("a<=b? " + String(c));
+  
+  c=a==b;
+  Serial.println("a igual b? " + String(c));
+  
+  c=a!=b;
+  Serial.println("a diferente de b? " + String(c));
+}
+
+void loop()
+{
+  
+}
