@@ -1,0 +1,25 @@
+float nota;
+
+void situacao(float nota)
+{
+  if (nota>=6)
+  {
+    Serial.println("Aluno Aprovado");
+  }
+  if (nota<6)
+  {
+    Serial.println("Aluno Reprovado");
+  }
+}
+
+void setup()
+{
+  Serial.begin(9600);
+  nota=5.9; //modificavel
+  situacao(nota);
+}
+
+void loop()
+{
+
+}
