@@ -1,0 +1,31 @@
+int x, y;
+
+void setup()
+{
+  Serial.begin(9600);
+  
+  x = 10;
+  
+  y = x>5 && x<20;
+  Serial.println("x>5 e x<20? " + String(y));
+  
+  y = x>10 && x<20;
+  Serial.println("x>10 e x<20? " + String(y));
+  
+  y = x>10 || x<20;
+  Serial.println("x>10 ou x<20? " + String(y));
+  
+  x = 1;
+  y = !x;
+  Serial.println("x=1, logo o inverso de x:" + String(y));
+  
+  x = 0;
+  y = !x;
+  Serial.println("x=0, logo o inverso de x:" + String(y));
+
+}
+
+void loop()
+{
+ 
+}
