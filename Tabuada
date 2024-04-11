@@ -1,0 +1,39 @@
+int i, numero, mult;
+
+void tabuada(int numero)
+
+{
+ mult = numero*0;
+ Serial.println(mult);
+ mult = numero*1;
+ Serial.println(mult);
+ mult = numero*2;
+ Serial.println(mult);
+ mult = numero*3;
+ Serial.println(mult);
+ mult = numero*4;
+ Serial.println(mult);
+ mult = numero*5;
+ Serial.println(mult);
+ mult = numero*6;
+ Serial.println(mult);
+ mult = numero*7;
+ Serial.println(mult);
+ mult = numero*8;
+ Serial.println(mult);
+ mult = numero*9;
+ Serial.println(mult);
+ mult = numero*10;
+ Serial.println(mult);
+}
+
+void setup()
+{
+  Serial.begin(9600);
+  numero=2; //modificavel
+  tabuada(numero);
+}
+
+void loop()
+{
+}
