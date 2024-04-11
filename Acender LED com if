@@ -1,0 +1,31 @@
+char c;
+
+void setup()
+{
+  pinMode(8, OUTPUT);
+  digitalWrite(8, LOW);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  Serial.println("Digite uma letra e tente acender o LED");
+  if (Serial.available() > 0)
+  {
+    c = Serial.read();
+    Serial.print("Letra: ");
+    Serial.println (c);
+	}
+                 
+    if (c == 'b')
+    {
+      digitalWrite(8, HIGH);
+      Serial.println("LED LIGADO");
+    }
+    else
+                 {
+    digitalWrite(8, LOW);
+    Serial.println("LED DESLIGADO");
+                 }
+                 delay(1000);
+                 }
